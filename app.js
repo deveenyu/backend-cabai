@@ -62,6 +62,7 @@ app.use(`${adminURL}/`, dashboardRouter);
 app.use(`${adminURL}/blanko`, admBlankoRouter);
 
 // API ----------------------------------
+app.use(`${URL}/`, petaniRouter);
 app.use(`${URL}/auth`, authRouter);
 app.use(`${URL}/petani`, petaniRouter);
 app.use(`${URL}/blanko`, blankoRouter);
