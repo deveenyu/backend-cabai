@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "node ./bin/www",
+      "src": "package.json",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "node /bin/www"
+      "dest": "package.json"
     }
   ]
 }
